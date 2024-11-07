@@ -539,6 +539,7 @@ header{
     /* width: var(--width);
     max-width: var(--max-width); */
     margin: auto;
+    background-image: url(./assets/image.png);
   }
 
   /* Left Sidebar */

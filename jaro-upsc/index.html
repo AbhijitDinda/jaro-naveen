@@ -482,18 +482,19 @@
     });
 </script> -->
 
+    <!-- backgroundImage change -->
     <script>
         function changeBackground(section) {
             const sectionIim = document.getElementById('section-iim');
             switch (section) {
                 case 'iim-iits':
-                    sectionIim.style.backgroundImage = "url('./assets/image.png')"; // Replace with your image path for IIM's and IIT's
+                    sectionIim.style.backgroundImage = "url('./assets/image-banner.png')"; // Replace with your image path for IIM's and IIT's
                     break;
                 case 'nirf':
-                    sectionIim.style.backgroundImage = "url('your-image-path-nirf.jpg')"; // Replace with your image path for NIRF
+                    sectionIim.style.backgroundImage = "url('./assets/image.png')"; // Replace with your image path for NIRF
                     break;
                 case 'ivy-leagues':
-                    sectionIim.style.backgroundImage = "url('your-image-path-ivy.jpg')"; // Replace with your image path for IVY LEAGUES
+                    sectionIim.style.backgroundImage = "url('./assets/image.png')"; // Replace with your image path for IVY LEAGUES
                     break;
                 default:
                     sectionIim.style.backgroundImage = "url('./assets/image.png')"; // Default image
@@ -501,6 +502,7 @@
         }
     </script>
 
+    <!-- testimonial two function -->
     <script>
 
         // Function to change video and update text content
@@ -524,36 +526,6 @@
 
 
     </script>
-
-
-
-    <script>
-        const videoSlider = new Swiper('.video-slider__swiper-container', {
-            loop: true,
-            speed: 500, // Adjust speed for smoother transitions
-            navigation: {
-                nextEl: '.video-slider__button--next',
-                prevEl: '.video-slider__button--prev',
-            },
-            pagination: {
-                el: '.video-slider__pagination',
-                clickable: true,
-            },
-            slidesPerView: 1, // Default for mobile
-            spaceBetween: 20, // Gap of 20px between slides
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                },
-            },
-        });
-    </script>
-
     <script>
         var swiper6 = new Swiper(".mySwiper", {
             slidesPerView: 1,
@@ -585,54 +557,35 @@
         });
 
     </script>
+    <!-- reels video -->
+    <script>
+        const videoSlider = new Swiper('.video-slider__swiper-container', {
+            loop: true,
+            speed: 500, // Adjust speed for smoother transitions
+            navigation: {
+                nextEl: '.video-slider__button--next',
+                prevEl: '.video-slider__button--prev',
+            },
+            pagination: {
+                el: '.video-slider__pagination',
+                clickable: true,
+            },
+            slidesPerView: 1, // Default for mobile
+            spaceBetween: 20, // Gap of 20px between slides
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
 
-    <!-- <script>
-    const testimonials = {
-    nikhilSaraf: {
-      video: "./img/SampleVideo_1280x720_5mb.mp4",
-      title: "NIKHIL SARAF",
-      text: "It is a long established fact that a reader will be distracted by the readable content...",
-    },
-    person2: {
-      video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-      title: "Person 2",
-      text: "Testimonial content for Person 2.",
-    },
-    person3: {
-      video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-      title: "Person 3",
-      text: "Testimonial content for Person 3.",
-    },
-    // Add more testimonials as needed
-  };
-  
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const videoElement = document.getElementById("testmonialVideo");
-    const titleElement = document.getElementById("testimonialTitle");
-    const textElement = document.getElementById("testimonialText");
-    const images = document.querySelectorAll(".test-items img");
-  
-    images.forEach(img => {
-      img.addEventListener("click", () => {
-        const id = img.getAttribute("data-id");
-        const testimonialData = testimonials[id];
-  
-        if (testimonialData) {
-          // Update video source
-          videoElement.setAttribute("src", testimonialData.video);
-          videoElement.load();
-          videoElement.play();
-  
-          // Update testimonial content
-          titleElement.textContent = testimonialData.title;
-          textElement.textContent = testimonialData.text;
-        }
-      });
-    });
-  });
-</script> -->
-
+    
 </body>
 
 </html>
