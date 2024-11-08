@@ -727,7 +727,7 @@ header{
     font-size: 15px;
     color: #333;
     line-height: 1.5;
-    width: 70%;
+    width: 60%;
 }
 
 /* Thumbnail Section */
@@ -748,7 +748,7 @@ header{
     background-color: #c5c5c5;
 }
 .swiper-testimonials {
-    max-width: 700px;
+    max-width: 50%;
     /* height: 300px; */
     margin-left: 0 !important;
   }
@@ -1123,5 +1123,9 @@ font-weight: 500;
 }
   .rotate {  
     transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.swiper-testimonials>.swiper-wrapper{
+    width: -webkit-fill-available;
 }
 
