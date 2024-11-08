@@ -3,29 +3,69 @@
 :root {
     --width: 90%;
 }
+@media (max-width: 1200px) {
 
+    .video-section__slider {
+        width: 50%;
+    }
+    .video-section__quote {
+        width: 50%;
+    }
+    .video-section__quote--main-text {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .video-section__quote--name-text {
+        font-size: 42px;
+        line-height: 70px;
+    }
+    .video-section__quote-text {
+        font-size: 25px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .career-section__headline {
+        font-size: 41px;
+        line-height: 51px;
+    }
+    .career-section__description, .career-section__subtext {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
 
 @media (max-width: 768px) {
     
     .guidance-title{
         font-size: 2rem;
+        line-height: 2.75rem;
     }
 
     .navbar__logo {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    .navbar__button {
+    padding: 0.25rem 0.5rem;;
+    font-size: 9px;
     }
 
     .video-section__quote--main-text {
         font-size: 1.5rem;
+        line-height: 2.5rem;
     }
     .video-section__quote--name-text {
         font-size: 2rem;
+        line-height: 3rem;
     }
     .video-section__quote-text {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 1.8rem;
+        padding-top: 1rem;
         
+    }
+    .video-section__quote-symbol {
+        font-size: 1.5rem;
     }
 
     .video-section__content {
@@ -39,6 +79,7 @@
 
     .testimonial__sidebar {
         font-size: 24px;
+        line-height: 45px;
         text-align: center;
         margin-right: 0;
         margin-bottom: 20px;
@@ -47,6 +88,7 @@
     }
     .testimonial__subtitle{
         font-size: 12px;
+        line-height: 15px;
     }
     .testimonial {
         flex-direction: column;
@@ -69,9 +111,9 @@
         width: 100%;
     }
 
-    .testimonial__video-section video {
-        height: 420px;
-        width: 100%;
+    .testimonial__video-section video,iframe {
+        height: 420px !important;
+        min-width: 100% !important;
     }
 
     .testimonial__info h2 {
@@ -103,10 +145,12 @@
     }
     .career-section__headline {
         font-size: 1.75rem;
+        line-height: 3rem;
     }
     .career-section__description,
     .career-section__subtext {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 .section-iim__title--highlight {
     font-size: 4rem;
@@ -116,7 +160,7 @@
 }
 
 .swiper-testimonials {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 }
@@ -134,10 +178,12 @@
 
     .testimonial__info h2 {
         font-size: 2rem;
+        line-height: 49px;
     }
 
     .testimonial__info h3 {
         font-size: 1.25rem;
+        line-height: 33px;
     }
 
     .testimonial__info p {
@@ -150,4 +196,6 @@
         height: 50px;
     } */
 }
+
+
 
