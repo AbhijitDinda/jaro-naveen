@@ -279,8 +279,8 @@
 
 
                     </div>
-                    <div class="swiper mySwiper">
-                        <div class="testimonial__thumbnails swiper-wrapper">
+                    <div class="swiper swiper-testimonials">
+                        <div class="swiper-wrapper">
 
                             <div class="thumbnail swiper-slide" onclick="changeVideo(this)"
                                 data-video-src="https://www.w3schools.com/html/mov_bbb.mp4" data-title="#1"
@@ -344,7 +344,7 @@
 
 
 
-    <section class="videos-section">
+    <!-- <section class="videos-section">
         <h2 class="videos-section__title">What the social media say about us?</h2>
         <button class="videos-section__contact-button">Get in touch</button>
 
@@ -388,18 +388,18 @@
                             <source src="video3.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <!-- Additional video slides as needed -->
+                    
                 </div>
 
-                <!-- Navigation buttons -->
+              
                 <div class="video-slider__button video-slider__button--prev swiper-button-prev"></div>
                 <div class="video-slider__button video-slider__button--next swiper-button-next"></div>
 
-                <!-- Pagination dots -->
+                
                 <div class="video-slider__pagination swiper-pagination"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <div class="counselling">
         <!-- <div class="counselling__background"></div> -->
@@ -527,38 +527,17 @@
 
     </script>
     <script>
-        var swiper6 = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                    loop: false,
-                }
-            },
+        var swiper = new Swiper(".swiper-testimonials", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
         });
-
-    </script>
+      </script>
     <!-- reels video -->
-    <script>
+    <!-- <script>
         const videoSlider = new Swiper('.video-slider__swiper-container', {
             loop: true,
             speed: 500, // Adjust speed for smoother transitions
@@ -583,7 +562,7 @@
                 },
             },
         });
-    </script>
+    </script> -->
 
     
 </body>

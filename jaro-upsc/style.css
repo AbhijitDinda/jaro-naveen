@@ -693,17 +693,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .testimonial__video-section video {
     width: 250px;
-    height: 400px; /* Increased height */
+    height: 100%; /* Increased height */
     border-radius: 10px;
     object-fit: cover;
 }
 
 .testimonial__info {
     display: flex;
+    gap:1rem;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
@@ -738,14 +740,18 @@ header{
 
 
 .thumbnail {
-    width: 180px !important;
-    /* height: 250px !important; */
+    width: 150px !important;
+    height: 220px !important;
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
     background-color: #c5c5c5;
 }
-
+.swiper-testimonials {
+    max-width: 700px;
+    /* height: 300px; */
+    margin-left: 0 !important;
+  }
 .thumbnail img {
     width: 100%;
     height: 100%;
@@ -877,7 +883,7 @@ header{
 
 /* styles.css */
 
-.counselling {
+/* .counselling {
     background-image: url(./assets/Frame-2.png);
     background-size: cover;
     position: relative;
@@ -887,7 +893,22 @@ header{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+} */
+
+.counselling {
+    background-image: url(./assets/Frame-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
 
 .counselling__background {
     position: absolute;
