@@ -114,6 +114,11 @@
 .section-iim__title {
     font-size: 2rem;
 }
+
+.swiper-testimonials {
+    max-width: 100%;
+}
+
 }
 
 /* Small mobile devices */
