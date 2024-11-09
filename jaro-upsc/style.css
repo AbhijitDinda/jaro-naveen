@@ -776,6 +776,18 @@ header{
     object-fit: cover;
 }
 
+.thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transform: scale(1);
+    transform-origin: 0 0;
+    pointer-events: none;
+    border: none;
+
+}
+
 
 .videos-section {
     width: var(--width);

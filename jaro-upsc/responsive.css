@@ -111,7 +111,7 @@
         width: 100%;
     }
 
-    .testimonial__video-section video,iframe {
+    .testimonial__video-section video,.testimonial__video-section iframe {
         height: 420px !important;
         min-width: 100% !important;
     }
